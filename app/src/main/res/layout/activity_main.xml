@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- 1. Digunakan untuk membuat id pada textview
+     2. Digunakan untuk mengatur lebar tata letak sesuai isi konten
+     3. Digunakan untuk mengatur tinggi tata letak sesuai isi konten
+     4. Digunakan untuk mengatur tata letak menyeleraskan mulai
+     5. Digunakan untuk mengatur tata letak rata kiri
+     6. Digunakan untuk mengatur tata letak sejajarkan induk atas
+     7. Digunakan untuk membuat text yaitu File name
+     8. Serta digunakan untuk mengatur tata tampilan pada android -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="File Name"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.11" />
+
+    <!-- 1. Digunakan untuk membuat id EditText, mengambil teks dari edit teks
+      2. Digunakan untuk mengatur lebar tata letak sesuai isi konten
+      3. Digunakan untuk mengatur tinggi tata letak sesuai isi konten
+      4. Digunakan untuk mengatur sejajar garis dasar
+      5. Digunakan untuk mengatur tata letak menyeleraskan mulai
+      6. Digunakan untuk mengatur tata letak rata kiri
+      7. Digunakan untuk petunjuk perlu memberi tahu pengguna apa yang harus mereka masukkan
+      8. Digunakan untuk memberi tahu bahwa pengguna hanya memasukkan baris teks
+      9. Serta digunakan untuk mengatur tata tampilan pada android -->
+    <EditText
+        android:id="@+id/editFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignStart="@+id/btnSave"
+        android:layout_alignLeft="@+id/btnSave"
+        android:layout_alignBottom="@+id/textView"
+        android:ems="10"
+        android:hint="file name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.731"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.079" />
+
+    <!-- 1. Digunakan untuk membuat id EditText, mengambil teks dari edit teks
+      2. Digunakan untuk memberikan nama id pada button
+      3. Digunakan untuk mengatur lebar tata letak sesuai isi konten
+      4. Digunakan untuk mengatur tinggi tata letak sesuai isi konten
+      5. Digunakan untuk mengatur tata letak bawah
+      6. Digunakan untuk tata letak sejajar
+      7. Digunakan untuk tata letak rata kanan pada button
+      8. Digunakan untuk membuat teks yaitu file data
+      9. Serta digunakan untuk mengatur tata tampilan pada android-->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:text="File Data"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.356" />
+
+    <!-- 1. Digunakan untuk membuat id EditText, mengambil teks dari edit teks
+      2. Digunakan untuk memberikan nama id pada button
+      3. Digunakan untuk mengatur lebar tata letak sesuai isi konten
+      4. Digunakan untuk mengatur tinggi tata letak sesuai isi konten
+      5. Digunakan untuk mengatur layout sejajar garis dasar
+      6. Digunakan untuk menyelaraskan tata letak
+      7. Digunakan untuk tata letak rata kiri
+      8. Digunakan untuk petunjuk perlu memberi tahu pengguna apa yang harus mereka masukkan
+      9. Digunakan untuk memberi tahu bahwa pengguna hanya memasukkan baris teks
+      10. Serta digunakan untuk mengatur tata tampilan pada android -->
+    <EditText
+        android:id="@+id/editData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignStart="@+id/editFile"
+        android:layout_alignLeft="@+id/editFile"
+        android:layout_alignBottom="@+id/textView2"
+        android:ems="10"
+        android:hint="data"
+        android:lines="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.726"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.244" />
+
+    <!-- 1. Digunakan untuk membuat Button Save
+    2. Digunakan untuk memberikan nama id pada button
+    3. Digunakan untuk mengatur lebar tata letak sesuai isi konten
+    4. Digunakan untuk mengatur tinggi tata letak sesuai isi konten
+    5. Digunakan untuk menyelaraskan tata letak
+    6. Digunakan untuk tata letak rata kiri
+    7. Digunakan untuk menyelaraskan tombol induk
+    8. Digunakan untuk memberikan nama button yaitu save
+    9. Serta digunakan untuk mengatur tata tampilan pada android -->
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignParentBottom="true"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnView"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.601" />
+
+    <!-- 1. Digunakan untuk membuat Button View
+    2. Digunakan untuk memberikan nama id pada button
+    3. Digunakan untuk mengatur lebar tata letak sesuai isi konten
+    4. Digunakan untuk mengatur tinggi tata letak sesuai isi konten
+    5. Digunakan untuk tata letak rata atas pada button
+    6. Digunakan untuk tata letak sejajar
+    7. Digunakan untuk tata letak rata kanan pada button
+    7. Digunakan untuk membuat teks pada button yaitu View
+    8. Serta digunakan untuk mengatur tata tampilan pada android-->
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnSave"
+        android:layout_alignEnd="@+id/editData"
+        android:layout_alignRight="@+id/editData"
+        android:text="View"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.705"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.601" />
+</androidx.constraintlayout.widget.ConstraintLayout>
